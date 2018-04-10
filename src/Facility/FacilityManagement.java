@@ -23,9 +23,9 @@ public class FacilityManagement implements Subject {
 
     //added manager classes and methods
     public void addFacility(Facility someFacility){
-        this.facilityArrayList.add(someFacility);
+        facilityArrayList.add(someFacility);
         //added for Observer pattern
-        notify();
+        Notify();
         System.out.println("New Facility Added. ");
     }
     public void removeFacility(Facility facilityToRemove){
