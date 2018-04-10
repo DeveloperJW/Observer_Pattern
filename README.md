@@ -5,7 +5,9 @@ dependency between objects so that when one object changes state, all its depend
 
 
 The use of observer pattern is to 
+
 – Maintaining consistency across redundant state
- – Optimizing batch changes to maintain consistency
+
+– Optimizing batch changes to maintain consistency
  
  
