@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("********** Application Context instantiated! **********");
+        System.out.println("********** Application Context instantiated! **********"+"\n");
         //set up a Facility for testing
         Facility facility= new Facility();
         facility.setFacilityId("1");
@@ -46,9 +46,15 @@ public class Main {
         customer2.setSsn("222-11-33333");
 
         FacilityManagement facilityManagement=new FacilityManagement();
+        //added customer and customer 2 to be subscribers
         facilityManagement.Attach(customer);
         facilityManagement.Attach(customer2);
-
+        /**
+         * now testing if customer's name matches with the facility's reserved name stored in FacilityManagement
+         * when new Facility added to FacilityManagement, if the reserved name matches with any of subscribers
+         * the subscriber will be notified and details will be printed.
+         * For example, only customer Justin Wang 's name matches, so only one result will be printed
+         */
         facilityManagement.addFacility(facility);
 
 
